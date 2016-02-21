@@ -1,0 +1,16 @@
+{
+  "name": "react-nicknames",
+  "version": "1.0.0",
+  "description": "Rename HTML elements to a more JSX friendly format.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artnotfound/react-nicknames"
+  },
+  "author": "Manny404",
+  "license": "MIT",
+  "homepage": "http://art404.com",
+  "dependencies": {
+    "react": "^0.14.0",
+  }
+}
