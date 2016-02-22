@@ -50,7 +50,7 @@ Will product a DOM that looks like:
       {'CLICK ME'}
     </button>
   </nav>
-  <div onclick="someFunc"></div>
+  <div onclick="someFunc()"></div>
 </div>
 ```
 
