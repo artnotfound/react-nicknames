@@ -30,11 +30,11 @@ class MyApp extends React.Component {
     return (
       <Wrapper className="App">
         <Topbar el="nav" className="Navigation">
-          <Button el="button" className="Button">
+          <Button el="button" onClick={this.someFunc.bind(this)} >
             {'CLICK ME'}
           </Button>
         </Topbar>
-        <CustomElement onClick={this.someFunc.bind(this)} />
+        <CustomElement className="CustomElement"/>
       </Wrapper>
     )
   }
@@ -46,11 +46,11 @@ Will product a DOM that looks like:
 ```html
 <div class="App">
   <nav class="Navigation">
-    <button class="Button">
+    <button onclick="someFunc()">
       {'CLICK ME'}
     </button>
   </nav>
-  <div onclick="someFunc()"></div>
+  <div class="CustomElement"></div>
 </div>
 ```
 
