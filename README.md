@@ -22,6 +22,10 @@ import {Wrapper, Topbar, Button, newNick} from 'react-nicknames'
 const CustomElement = newNick('CustomElement')
 
 class MyApp extends React.Component {
+  someFunc () {
+    console.log('lol')
+  }
+  
   render () {
     return (
       <Wrapper className="App">
@@ -30,7 +34,7 @@ class MyApp extends React.Component {
             {'CLICK ME'}
           </Button>
         </Topbar>
-        <CustomElement onClick={someFunc} />
+        <CustomElement onClick={this.someFunc.bind(this)} />
       </Wrapper>
     )
   }
