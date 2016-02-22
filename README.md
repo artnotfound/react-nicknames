@@ -30,7 +30,7 @@ class MyApp extends React.Component {
     return (
       <Wrapper className="App">
         <Topbar el="nav" className="Navigation">
-          <Button el="button" onClick={this.someFunc.bind(this)} >
+          <Button el="button" onClick={this.someFunc.bind(this)}>
             {'CLICK ME'}
           </Button>
         </Topbar>
